@@ -18,11 +18,11 @@ namespace FlightPlanner.Controllers
 
         public CustomerFlightApiController(
             IMapper mapper,
-            IFlightService flightservice,
+            IFlightService flightService,
             IEnumerable<IFlightRequestValidator> flightRequestValidator)
         {
             _mapper = mapper;
-            _flightService = flightservice;
+            _flightService = flightService;
             _flightRequestValidators = flightRequestValidator;
         }
 

@@ -49,7 +49,7 @@ namespace FlightPlanner
                 options.AddDefaultPolicy(
                     builder =>
                     {
-                        builder.WithOrigins("https://localhost:8080", "http://localhost:4200") //("https://localhost:44351", "http://localhost:4200")
+                        builder.WithOrigins("https://localhost:8080", "http://localhost:4200")
                             .AllowAnyHeader()
                             .AllowAnyMethod();
                     });

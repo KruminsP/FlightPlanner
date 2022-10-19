@@ -49,7 +49,6 @@ namespace FlightPlanner.Filters
                         )
                     );
                 authorized = _userService.Query().Any(u => u.UserName == username && u.Password == password);
-                   // (username == "codelex-admin" && password == "UGFzc3dvcmQxMjM="); //Password123
             }
             catch
             {
